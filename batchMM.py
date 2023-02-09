@@ -98,7 +98,8 @@ def call_GPU(tensor1, tensor2):
 
 
 def main():
-    paramList = [[500, 500, 500],
+    paramList = [[100, 100, 100],
+                [500, 500, 500],
                 [1000, 1000, 1000]
                 ]
     for bs in [5,10,15]:
