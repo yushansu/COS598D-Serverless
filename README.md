@@ -5,7 +5,7 @@ In this assignment, you are required to implement and evaluate batched matrix mu
 
 ## Getting Started
  - Clone this repo
- - Install [Submitit](https://github.com/facebookincubator/submitit) on a server with [Slurm](https://slurm.schedmd.com/quickstart.html) (e.g. [Adroit](https://researchcomputing.princeton.edu/systems/adroit) Server, or you can intall Slurm on your server.) 
+ - Install [Submitit](https://github.com/facebookincubator/submitit) on a server with [Slurm](https://slurm.schedmd.com/quickstart.html) (e.g. [Adroit](https://researchcomputing.princeton.edu/systems/adroit) Server, or you can install Slurm on your server.) 
  - Install [Pytorch](https://pytorch.org/)
 
 ## How to Run 
