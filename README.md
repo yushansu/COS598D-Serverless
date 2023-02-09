@@ -87,5 +87,5 @@ Discuss the following
 
 ## What to be included in your submission
 
-- A report includes your experiment settings, e.g., the server and environment you run your experiements on, the CPUs and GPUs you are using, etc., your results, discussions, and answers to all the quesions in the previous section.
+- A report includes your experiment settings, e.g., the server and environment you run your experiements on, the CPUs and GPUs you are using, etc., your results, discussions, and answers to all the questions in the previous section.
 - Your `batchMM.py` file.
