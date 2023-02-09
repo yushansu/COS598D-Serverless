@@ -83,7 +83,7 @@ For each case in the following table, run your serverless call 5 times and repor
 Discuss the following
 - Performance comparison of the three cases.
 - Pros and Cons for the three design choices: single CPU, multiple CPUs, and GPU.
-- When serverless computating can be beneficial?
+- When serverless computing can be beneficial?
 
 ## What to be included in your submission
 
