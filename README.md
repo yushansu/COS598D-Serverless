@@ -26,7 +26,7 @@ Implement the function `call_singleCPU` to make the serverless function call wit
 ### 2. Compare the performance of serverless call with bare metal time
 
 Measure the time for your serverless call and its bare metal time, i.e., the actual time it takes to run on the CPU server.
-For each case in the following table, run your serverless call 5 times and report the times for the 5 runs.
+For each case in the following table, run your serverless call 5 times and report the times for all the 5 runs.
 
 ***Performance of Bare Metal v.s. Serverless Call of Batched Matrix Multiplication (Single CPU)***
 
@@ -66,7 +66,7 @@ Discuss the performance difference between the single-CPU and the multi-CPU serv
 
 ### 4. Batch Matrix Multiplication Serverless Call on GPU
 
-Implement the batched multiplication serverless call (`bmm_gpu`) on GPU. 
+Implement the batched multiplication serverless call (`bmm_gpu`) for 1,000 times on GPU. 
 
 Implement function `call_GPU` to make the serverless function call and verify its correctness.
 
@@ -90,6 +90,22 @@ Discuss the following
 - Performance comparison of the three cases.
 - Pros and Cons for the three design choices: single CPU, multiple CPUs, and GPU.
 - When serverless computing can be beneficial?
+
+### 5. Batch Matrix Multiplication Serverless Call on multiple GPUs
+
+Increase the number of batched matrix multiplication executions in batched multiplication serverless call on GPU (`bmm_gpu`) to 5,000 times. 
+
+Implement function `call_multiGPU` to parallelize the batched matrix multiplication by spliting each batched matrix by half and making one serverless call (`bmm_gpu`) for each half batch, i.e., making 2 serverless calls in parallel, and verify the result's correctness.
+
+For the case in the following table, run your serverless call 5 times and report the time for all the 5 runs.
+
+***Performance of Serverless Batched Matrix Multiplication (Single GPU v.s. Multi GPUs)***
+
+|   `[bs, M, N, K]`  | Bare Metal GPU (s)|  Single GPU (s) |   Multiple GPUs (s) | 
+|----------------|----------------|-------------|-------------|
+| [200, 1000, 1000, 1000] |  |    |      |   |
+
+Discuss the performance and overhead for each of the three cases.
 
 ## What to be included in your submission
 

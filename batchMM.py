@@ -82,7 +82,7 @@ def call_multiCPU(tensor1, tensor2):
     return end - start
 
 '''
-Make serverless call on GPU
+Make serverless call on a single GPU
 '''
 def call_GPU(tensor1, tensor2):
     log_folder = "log_test/%j"
@@ -97,7 +97,23 @@ def call_GPU(tensor1, tensor2):
     return end - start, rtime
 
 
+'''
+Make serverless call on multiple GPUs
+'''
+def call_multiGPU(tensor1, tensor2):
+    log_folder = "log_test/%j"
+    # TODO: Define executer and specify parameters
+    num_finished = 0
+    start = time.time()
+    # TODO: make 2 parallel serverless calls to bmm_gpu on 2 GPUs, 
+    # and increase the number of bmm execution in bmm_gpu to 5,000
+    output = [job.result()[0] for job in jobs]
+    end = time.time()
+    return end - start
+
+
 def main():
+    # TODO: add more parameters and batch sizes
     paramList = [[100, 100, 100],
                 [500, 500, 500],
                 [1000, 1000, 1000]
