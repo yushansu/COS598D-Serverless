@@ -42,7 +42,7 @@ Discuss the following
 
 ### 3. Parallelize Batch Matrix Multiplication Serverless Call on multiple CPUs
 
-Implement a serverless call `mm_single` performing one matrix multiplication for 1000 times on a single CPU.
+Implement a serverless call `mm_single` performing one matrix multiplication for 1,000 times on a single CPU.
 
 Implement function `call_multiCPU` to parallelize the batched matrix multiplication by making one serverless call (`mm_single`) for each matrix multiplication within the batch, i.e., making `bs` serverless calls in parallel for batch size `bs`, and verify the result correctness.
 
@@ -59,7 +59,7 @@ For each case in the following table, run your parallelized serverless calls 5 t
 | [10, 1000, 1000, 1000] |  |    |      |   
 | [15, 1000, 1000, 1000] |  |    |      |
 
-Discuss the performance difference of the single-CPU and the multi-CPU serverless call.
+Discuss the performance difference between the single-CPU and the multi-CPU serverless call.
 
 ### 4. Batch Matrix Multiplication Serverless Call on GPU
 
@@ -85,7 +85,7 @@ Discuss the following
 - Pros and Cons for the three design choices: single CPU, multiple CPUs, and GPU.
 - When serverless computating can be beneficial?
 
-## What to be included in you submission
+## What to be included in your submission
 
 - A report includes your experiment settings, e.g., the server and environment you run your experiements on, the CPUs and GPUs you are using, etc., your results, discussions, and answers to all the quesions in the previous section.
 - Your `batchMM.py` file.
